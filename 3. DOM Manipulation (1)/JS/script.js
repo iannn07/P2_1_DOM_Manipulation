@@ -57,3 +57,4 @@ console.log(text_2.classList.item(1));
 console.log(text_2.classList.contains("active"));
 console.log(text_2.classList.replace("active", "inactive"));
 console.log(text_2.classList);
+
