@@ -1,4 +1,4 @@
-// getElementByID
+// getElementByID -> Element
 const title = document.getElementById('title');
 title.innerHTML = 'Hi Ian!';
 title.style.textAlign = 'center';
@@ -7,7 +7,7 @@ title.style.backgroundColor = 'white';
 const container = document.getElementById('container');
 container.style.backgroundColor = '#f4f4f4';
 
-// getElementsByTagName
+// getElementsByTagName -> HTML Collection
 const body = document.getElementsByTagName('body')[0];
 body.style.backgroundColor = '#0f0f0f';
 body.style.borderRadius = '5px';
