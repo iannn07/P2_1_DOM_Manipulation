@@ -1,0 +1,42 @@
+* {
+  border: 2px solid #272727;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px;
+  font-family: Roboto, sans-serif;
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #0f0f0f;
+}
+#container {
+  background-color: #f4f4f4;
+}
+p {
+  font-style: italic;
+}
+section#first-section p:nth-child(2),
+section#first-section p a {
+  text-align: center;
+  background-color: #0f0f0f;
+  color: #f4f4f4;
+  border: none;
+}
+section#second-section p {
+  color: red;
+}
+li {
+  color: blue;
+  font-weight: bold;
+}
+section#second-section ul li:nth-child(2) {
+  color: green;
+}
+.active {
+  text-align: end;
+}
