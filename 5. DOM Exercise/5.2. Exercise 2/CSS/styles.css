@@ -14,7 +14,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* height: 90vh; */
 }
 
 body div#container {
@@ -30,27 +29,82 @@ body div#container header#header h1 {
   font-size: 48px;
 }
 
-body div#container main {
+body div#container main#main {
   margin: 50px 0 0 0;
   display: flex;
   justify-content: space-between;
 }
 
-body div#container main div {
+body div#container main#main div#computer-area,
+body div#container main#main div#player-area {
   text-transform: uppercase;
   font-weight: bold;
   background-color: #0f0f0f;
   margin: 10px;
   width: 350px;
-  height: 250px;
+  min-height: 260px;
   border: 3px solid #272727;
   border-radius: 5px;
 }
 
-body div#container main div p.user {
+body div#container main#main div p.user {
   background-color: #272727;
   margin: 0;
   padding: 10px 0;
+}
+
+body div#container main#main div#computer-area div.icon,
+body div#container main#main div#player-area div.icon {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+body div#container main#main div#computer-area div.icon div.icon-wrapper,
+body div#container main#main div#player-area div.icon div.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body
+  div#container
+  main#main
+  div#computer-area
+  div.icon
+  div.icon-wrapper.show
+  img,
+body
+  div#container
+  main#main
+  div#player-area
+  div.icon
+  div.icon-wrapper.show
+  img {
+  display: block;
+}
+
+body div#container main#main div#computer-area div.icon div.icon-wrapper img,
+body div#container main#main div#player-area div.icon div.icon-wrapper img {
+  display: none;
+}
+
+body div#container main#main div img {
+  height: 200px;
+  width: 200px;
+}
+
+body div#result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body div#result p{
+  background-color: #272727;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px 25px;
 }
 
 body div#container footer {
@@ -106,6 +160,7 @@ body
   align-items: center;
   justify-content: center;
   border: 1px solid #272727;
+  border-radius: 5px;
   width: 50px;
   height: 50px;
   font-size: 36px;
@@ -127,11 +182,13 @@ body
 @media (max-width: 1300px) {
   body div#container {
     width: 500px;
+    transition: width 0.25s ease;
   }
 }
 
 @media (min-width: 1300px) {
   body div#container {
-    width: 650px;
+    width: 750px;
+    transition: width 0.25s ease;
   }
 }
