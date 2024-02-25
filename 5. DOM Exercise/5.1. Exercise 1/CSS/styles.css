@@ -3,20 +3,24 @@
   color: #f4f4f4;
 }
 
+html, body{
+  height: 100%;
+}
+
 body {
-  background-color: #0f0f0f;
+  background-color: #ffffff;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 90vh;
+  /* height: 90vh; */
 }
 
 body div#container {
   background-color: #0f0f0f;
   border: 1px solid #272727;
   border-radius: 10px;
-  margin: 0 450px;
+  margin: 0 auto;
   padding: 35px;
   height: 1fr;
 }
@@ -42,4 +46,16 @@ body main#main div.btn button {
   border: 0.5px solid #272727;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 1300px) {
+  body div#container {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1300px) {
+  body div#container {
+    width: 650px;
+  }
 }

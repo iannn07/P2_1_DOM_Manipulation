@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -14,9 +14,45 @@
     />
 
     <link rel="stylesheet" href="CSS/styles.css" type="text/css" />
-    <title>DOM Events</title>
-</head>
-<body>
-    
-</body>
+    <title>DOM Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div id="container">
+      <header id="header">
+        <h1 class="text">Rock Paper Scissors!</h1>
+      </header>
+      <main id="main">
+        <div id="computer-area">
+          <p class="user">Computer</p>
+        </div>
+        <div id="player-area">
+          <p class="user">Player</p>
+        </div>
+      </main>
+
+      <div id="result"><p class="result">Result:</p></div>
+
+      <footer id="footer">
+        <div id="panel">
+          <p class="guide">Hit the keyboard to choose</p>
+          <div class="panel-button-wrapper">
+            <div class="button-wrapper">
+              <button type="button" class="panel-button">R</button>
+              <p class="panel-guide">Rock</p>
+            </div>
+            <div class="button-wrapper">
+              <button type="button" class="panel-button">P</button>
+              <p class="panel-guide">Paper</p>
+            </div>
+            <div class="button-wrapper">
+              <button type="button" class="panel-button">S</button>
+              <p class="panel-guide">Scissors</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="JS/script.js"></script>
+  </body>
 </html>
