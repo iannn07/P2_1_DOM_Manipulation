@@ -1,19 +1,19 @@
 // Basic HTML Structure
-const body = document.querySelector("body");
 const container = document.getElementById("container");
 
 // HTML Content
 const btn_wrapper = container.querySelector(
   "footer#footer div#panel div.panel-button-wrapper"
 );
-const panel_button = btn_wrapper.querySelectorAll("button.panel-button");
 const result = container.querySelector("div#result p.result");
+
 const comp_icon = container.querySelector(
   "main#main div#computer-area div.icon"
 );
 const comp_rock_icon = comp_icon.querySelector("div.rock-icon");
 const comp_paper_icon = comp_icon.querySelector("div.paper-icon");
 const comp_scissors_icon = comp_icon.querySelector("div.scissors-icon");
+
 const player_icon = container.querySelector(
   "main#main div#player-area div.icon"
 );
@@ -122,14 +122,13 @@ function clicked(btn) {
   btn.style.borderColor = "white";
   btn.style.transition =
     "background-color 0.15s ease-in-out, border-color 0.1s ease-in-out";
-  setTimeout(() => {
-    btn.style.backgroundColor = "rgba(0, 0, 0, 0)";
-    hover(btn, "mouseover");
-    hover(btn, "mouseout");
-  }, 150);
-  setTimeout(() => {
-    btn.style.borderColor = "#272727";
-  }, 100);
+    setTimeout(() => {
+        btn.style.backgroundColor = "rgba(0, 0, 0, 0)";
+        hover(btn, "mouseover");
+    }, 150);
+    setTimeout(() => {
+        btn.style.borderColor = "#272727";
+    }, 100);
 }
 
 function pressed(btn) {

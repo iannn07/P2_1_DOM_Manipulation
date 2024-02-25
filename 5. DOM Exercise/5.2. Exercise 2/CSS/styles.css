@@ -103,6 +103,7 @@ body div#result {
 body div#result p{
   background-color: #272727;
   border-radius: 5px;
+  font-size: 36px;
   margin: 10px 0;
   padding: 10px 25px;
 }
