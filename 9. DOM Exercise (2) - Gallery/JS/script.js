@@ -2,32 +2,46 @@
 const container = document.getElementById("container");
 
 // HTML Content
-const btn = container.querySelector("main#main div.btn button");
+const img_preview = container.querySelector(
+  "main#main div#gallery div.image-wrapper img"
+);
+const img_thumb = container.querySelectorAll(
+  "main#main div#gallery div.thumbnails img.thumb"
+);
 
-function setRandomColor() {
-  btn.style.backgroundColor = "#3d3d3d";
-  btn.style.borderColor = "white";
-  btn.style.transition =
-    "background-color 0.15s ease-in-out, border-color 0.1s ease-in-out";
+// Functions Transition
+function hover(img_thumb, hover) {
+  if (hover == "mouseover") {
+    img_thumb.style.opacity = "0.75";
+    img_thumb.style.transition = "all 0.125s";
+  } else {
+    img_thumb.style.opacity = "1";
+    img_thumb.style.transition = "all 0.125s";
+  }
+}
 
-  // Use this to set the BG Color back to the default
+function clicked(img_thumb) {
+  img_thumb.style.opacity = "0.5";
+  img_thumb.style.transition = "all 0.125s";
   setTimeout(() => {
-    btn.style.backgroundColor = "#222222";
+    hover(img_thumb, "mouseover");
   }, 150);
-  setTimeout(() => {
-    btn.style.borderColor = "#272727";
-  }, 100);
 }
 
 // Event Listener
-btn.addEventListener("mouseover", function () {
-  btn.style.backgroundColor = "#222222";
-  btn.style.transition = "all 0.125s";
+img_thumb.forEach((thumb) => {
+  thumb.addEventListener("mouseover", () => {
+    hover(thumb, "mouseover");
+  });
+  thumb.addEventListener("mouseout", () => {
+    hover(thumb, "mouseout");
+  });
+  thumb.addEventListener("click", () => {
+    clicked(thumb);
+    img_preview.src = thumb.src;
+    img_preview.classList.add("fade-in");
+    setTimeout(() => {
+      img_preview.classList.remove("fade-in");
+    }, 300);
+  });
 });
-
-btn.addEventListener("mouseout", function () {
-  btn.style.backgroundColor = "";
-  btn.style.transition = "all 0.125s";
-});
-
-btn.addEventListener("click", setRandomColor);

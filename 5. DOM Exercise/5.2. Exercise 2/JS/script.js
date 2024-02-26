@@ -122,13 +122,13 @@ function clicked(btn) {
   btn.style.borderColor = "white";
   btn.style.transition =
     "background-color 0.15s ease-in-out, border-color 0.1s ease-in-out";
-    setTimeout(() => {
-        btn.style.backgroundColor = "rgba(0, 0, 0, 0)";
-        hover(btn, "mouseover");
-    }, 150);
-    setTimeout(() => {
-        btn.style.borderColor = "#272727";
-    }, 100);
+  setTimeout(() => {
+    btn.style.backgroundColor = "rgba(0, 0, 0, 0)";
+    hover(btn, "mouseover");
+  }, 150);
+  setTimeout(() => {
+    btn.style.borderColor = "#272727";
+  }, 100);
 }
 
 function pressed(btn) {
