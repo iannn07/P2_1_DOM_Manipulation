@@ -1,0 +1,87 @@
+* {
+  font-family: Roboto;
+  color: #f4f4f4;
+}
+
+body {
+  margin: 0;
+  background-color: #343a40;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body div#container {
+  min-height: 0;
+  height: auto;
+  background-color: #0f0f0f;
+  border: 1px solid #272727;
+  border-radius: 10px;
+  margin: 40px auto;
+  padding: 35px;
+  width: 1000px;
+  transition: width 0.25s ease;
+}
+
+body header#header h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+body main#main {
+  margin: 20px 0 0 0;
+}
+
+body main#main div#gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body main#main div#gallery h2.subheading {
+  font-size: 32px;
+  margin: 0;
+}
+
+body main#main div#gallery div.image-wrapper {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #272727;
+  border-radius: 5px;
+  width: 700px;
+  padding: 15px;
+  margin: 0 0 20px 0;
+}
+
+body main#main div#gallery img.image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+body main#main div#gallery div.thumbnails {
+  margin: 20px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+body main#main div#gallery div.thumbnails img {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body main#main div#gallery div.thumbnails img:hover {
+  opacity: 0.75;
+}
+
+@media (max-width: 1150px) {
+  body div#container {
+    width: 750px;
+    transition: width 0.25s ease;
+  }
+}

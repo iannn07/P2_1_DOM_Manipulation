@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="icon" href="JavaScript-logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS/styles.css" type="text/css" />
+    <title>DOM Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div id="container">
+      <header id="header">
+        <h1 class="text">Rock Paper Scissors!</h1>
+      </header>
+      <main id="main">
+        <div id="computer-area">
+          <p class="user">Computer</p>
+          <div class="icon">
+            <div class="icon-wrapper rock-icon">
+              <img src="assets/rock.svg" alt="Rock" />
+            </div>
+            <div class="icon-wrapper paper-icon">
+              <img src="assets/paper.svg" alt="Paper" />
+            </div>
+            <div class="icon-wrapper scissors-icon">
+              <img src="assets/scissors.svg" alt="Scissors" />
+            </div>
+          </div>
+        </div>
+        <div id="player-area">
+          <p class="user">Player</p>
+          <div class="icon">
+            <div class="icon-wrapper rock-icon">
+              <img src="assets/rock.svg" alt="Rock" />
+            </div>
+            <div class="icon-wrapper paper-icon">
+              <img src="assets/paper.svg" alt="Paper" />
+            </div>
+            <div class="icon-wrapper scissors-icon">
+              <img src="assets/scissors.svg" alt="Scissors" />
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div id="result"><p class="result">Result: -</p></div>
+
+      <footer id="footer">
+        <div id="panel">
+          <p class="guide">Hit the keyboard to choose</p>
+          <div class="panel-button-wrapper">
+            <div class="button-wrapper">
+              <button type="button" class="panel-button rock">R</button>
+              <p class="panel-guide">Rock</p>
+            </div>
+            <div class="button-wrapper">
+              <button type="button" class="panel-button paper">P</button>
+              <p class="panel-guide">Paper</p>
+            </div>
+            <div class="button-wrapper">
+              <button type="button" class="panel-button scissors">S</button>
+              <p class="panel-guide">Scissors</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="JS/script.js"></script>
+  </body>
+</html>

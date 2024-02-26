@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phase 1 - YouTube Duplicate</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="..\src\YT Icon.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="start">
+        <button class="hamburger-menu-button">
+          <img
+            src="..\src\icons\hamburger.svg"
+            alt="hamburger"
+            class="hamburger-menu-icon"
+          />
+        </button>
+        <a href="index.html"
+          ><img src="..\src\icons\YT-icon.svg" alt="YT Icon" class="yt-icon"
+        /></a>
+      </div>
+      <div class="center">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img
+            src="..\src\icons\search.svg"
+            alt="Search"
+            class="search-button-icon"
+          />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="search-voice-button">
+          <img
+            src="..\src\icons\microphone.svg"
+            alt="Microphone"
+            class="search-voice-icon"
+          />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="end">
+        <button class="camera-create-button">
+          <img
+            src="..\src\icons\camera.svg"
+            alt="Create"
+            class="camera-create-icon"
+          />
+          <div class="tooltip">Create</div>
+        </button>
+        <div class="notification-container">
+          <button class="notification-button">
+            <img
+              src="..\src\icons\notification.svg"
+              alt="Notification"
+              class="notification-icon"
+            />
+            <div class="tooltip">Notifications</div>
+          </button>
+          <div class="notification-count"><p>9+</p></div>
+        </div>
+        <img
+          src="..\src\ch_img\JJ Olatunji.jpg"
+          alt="Profile"
+          class="profile-icon"
+        />
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-container">
+        <div class="sidebar-menu sm-home">
+          <button>
+            <img
+              src="..\src\icons\sidebar\home.svg"
+              alt="Home"
+              class="sidebar-home-icon"
+            />
+          </button>
+          <div>Home</div>
+        </div>
+        <div class="sidebar-menu">
+          <button>
+            <img
+              src="..\src\icons\sidebar\shorts.svg"
+              alt="Shorts"
+              class="sidebar-shorts-icon"
+            />
+          </button>
+          <div>Shorts</div>
+        </div>
+        <div class="sidebar-menu">
+          <button>
+            <img
+              src="..\src\icons\sidebar\subscription.svg"
+              alt="Subscription"
+              class="sidebar-subscription-icon"
+            />
+          </button>
+          <div>Subscription</div>
+        </div>
+        <div class="sidebar-menu">
+          <button>
+            <img
+              src="..\src\icons\sidebar\you.svg"
+              alt="You"
+              class="sidebar-library-icon"
+            />
+          </button>
+          <div>You</div>
+        </div>
+        <div class="sm-after-divider">
+          <div class="sm-divider"></div>
+          <div class="sm-title">Explore</div>
+          <div class="sidebar-menu">
+            <button>
+              <img
+                src="..\src\icons\sidebar\you-trending.svg"
+                alt="You Trending"
+                class="sidebar-library-icon"
+              />
+            </button>
+            <div>Trending</div>
+          </div>
+          <div class="sidebar-menu">
+            <button>
+              <img
+                src="..\src\icons\sidebar\you-musics.svg"
+                alt="You Musics"
+                class="sidebar-library-icon"
+              />
+            </button>
+            <div>Music</div>
+          </div>
+          <div class="sidebar-menu">
+            <button>
+              <img
+                src="..\src\icons\sidebar\you-films.svg"
+                alt="You Films"
+                class="sidebar-library-icon"
+              />
+            </button>
+            <div>Films</div>
+          </div>
+          <div class="sidebar-menu">
+            <button>
+              <img
+                src="..\src\icons\sidebar\you-gaming.svg"
+                alt="You Gaming"
+                class="sidebar-library-icon"
+              />
+            </button>
+            <div>Gaming</div>
+          </div>
+          <div class="sidebar-menu">
+            <button>
+              <img
+                src="..\src\icons\sidebar\you-news.svg"
+                alt="You News"
+                class="sidebar-library-icon"
+              />
+            </button>
+            <div>News</div>
+          </div>
+          <div class="sidebar-menu">
+            <button>
+              <img
+                src="..\src\icons\sidebar\you-sport.svg"
+                alt="You Sport"
+                class="sidebar-library-icon"
+              />
+            </button>
+            <div>Sport</div>
+          </div>
+          <div class="sm-divider"></div>
+          <div class="sm-title">More from YouTube</div>
+          <div class="sidebar-menu">
+            <button>
+              <img
+                src="..\src\YT Icon.png"
+                alt="Premium"
+                class="sidebar-library-icon"
+              />
+            </button>
+            <div>YouTube Premium</div>
+          </div>
+          <div class="sidebar-menu">
+            <button>
+              <img
+                src="..\src\icons\sidebar\YT-studio.png"
+                alt="Studio"
+                class="sidebar-library-icon"
+              />
+            </button>
+            <div>YouTube Studio</div>
+          </div>
+          <div class="sidebar-menu">
+            <button>
+              <img
+                src="..\src\icons\sidebar\YT-music.svg"
+                alt="Music"
+                class="sidebar-library-icon"
+              />
+            </button>
+            <div>YouTube Music</div>
+          </div>
+          <div class="sidebar-menu">
+            <button>
+              <img
+                src="..\src\icons\sidebar\YT-kids.svg"
+                alt="Kids"
+                class="sidebar-library-icon"
+              />
+            </button>
+            <div>YouTube Kids</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main id="main" class="main">
+      <div id="contents">
+        <div class="content-container-grid">
+          <div class="content-container">
+            <div class="thumbnail">
+              <a href="https://www.youtube.com/watch?v=TJZSER2f-Gc">
+                <div class="content-duration"><p>29:48</p></div>
+                <img
+                  src="..\src\img\KSI One Laugh One Punch.jpg"
+                  alt="KSI One Laugh One Punch"
+                  class="thumbnail"
+                />
+              </a>
+            </div>
+            <div class="content-details-grid">
+              <div class="channel-icon">
+                <a href="https://www.youtube.com/@jjolatunji"
+                  ><img
+                    src="..\src\ch_img\JJ Olatunji.jpg"
+                    alt="JJ Olatunji"
+                    class="channel-picture"
+                /></a>
+              </div>
+              <div class="content-text">
+                <a href="https://www.youtube.com/watch?v=TJZSER2f-Gc">
+                  <p class="content-title">
+                    ONE LAUGH, ONE PUNCH WITH MY BRO... LIVE!
+                  </p>
+                </a>
+                <a href="https://www.youtube.com/@jjolatunji"
+                  ><p class="content-description content-author">
+                    JJ Olatunji &#10003;
+                  </p></a
+                >
+                <p class="content-description content-stats">
+                  889K views &#183; 9 hours ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="thumbnail">
+              <a
+                href="https://www.youtube.com/watch?v=oTr-MzTYUag&pp=ygUNaGVhcnQgZmFpbHVyZQ%3D%3D"
+              >
+                <div class="content-duration"><p>1:20:10</p></div>
+                <img alt="CHF" class="thumbnail" src="..\src\img\CHF.jpg" />
+              </a>
+            </div>
+            <div class="content-details-grid">
+              <div class="channel-icon">
+                <a href="https://www.youtube.com/@NinjaNerdOfficial"
+                  ><img
+                    src="..\src\ch_img\Ninja Nerd.jpg"
+                    alt="Ninja Nerd"
+                    class="channel-picture"
+                /></a>
+              </div>
+              <div class="content-text">
+                <a
+                  href="https://www.youtube.com/watch?v=oTr-MzTYUag&pp=ygUNaGVhcnQgZmFpbHVyZQ%3D%3D"
+                  ><p class="content-title">
+                    Pathophysiology of Congestive Heart Failure (CHF)
+                  </p></a
+                >
+                <a href="https://www.youtube.com/@NinjaNerdOfficial"
+                  ><p class="content-description content-author">
+                    Ninja Nerd &#10003;
+                  </p></a
+                >
+                <p class="content-description content-stats">
+                  1.1M views &#183; 3 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="thumbnail">
+              <a
+                href="https://www.youtube.com/watch?v=udKI4jjWJ7k&pp=ygUgU0NBUlkgR0FNRVMgV0lUSCBNWSBCUk8uLi4gTElWRSE%3D"
+              >
+                <div class="content-duration"><p>33:09</p></div>
+                <img
+                  alt="KSI Scary Games"
+                  class="thumbnail"
+                  src="..\src\img\KSI Scary Games.jpg"
+                />
+              </a>
+            </div>
+            <div class="content-details-grid">
+              <div class="channel-icon">
+                <a href="https://www.youtube.com/@jjolatunji"
+                  ><img
+                    src="..\src\ch_img\JJ Olatunji.jpg"
+                    alt="JJ Olatunji"
+                    class="channel-picture"
+                /></a>
+              </div>
+              <div class="content-text">
+                <a
+                  href="https://www.youtube.com/watch?v=udKI4jjWJ7k&pp=ygUgU0NBUlkgR0FNRVMgV0lUSCBNWSBCUk8uLi4gTElWRSE%3D"
+                >
+                  <p class="content-title">SCARY GAMES WITH MY BRO... LIVE!</p>
+                </a>
+                <a href="https://www.youtube.com/@jjolatunji"
+                  ><p class="content-description content-author">
+                    JJ Olatunji &#10003;
+                  </p></a
+                >
+                <p class="content-description content-stats">
+                  991K views &#183; 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="thumbnail">
+              <a
+                href="https://www.youtube.com/watch?v=yeSbUxW2M-4&pp=ygUgY2xpcHMgdGhhdCBtYWRlIGthaSBjZW5hdCBmYW1vdXM%3D"
+              >
+                <div class="content-duration"><p>13:05</p></div>
+                <img
+                  alt="Kai Cenat Famous"
+                  class="thumbnail"
+                  src="..\src\img\Kai Cenat Famous.jpg"
+                />
+              </a>
+            </div>
+            <div class="content-details-grid">
+              <div class="channel-icon">
+                <a href="https://www.youtube.com/@KaiCenatLive">
+                  <img
+                    src="..\src\ch_img\Kai Cenat.jpg"
+                    alt="Kai Cenat"
+                    class="channel-picture"
+                  />
+                </a>
+              </div>
+              <div class="content-text">
+                <a
+                  href="https://www.youtube.com/watch?v=yeSbUxW2M-4&pp=ygUgY2xpcHMgdGhhdCBtYWRlIGthaSBjZW5hdCBmYW1vdXM%3D"
+                >
+                  <p class="content-title">clips that made Kai Cenat famous</p>
+                </a>
+                <a href="https://www.youtube.com/@KaiCenatLive">
+                  <p class="content-description content-author">
+                    Kai Cenat Live &#10003;
+                  </p>
+                </a>
+                <p class="content-description content-stats">
+                  7M views &#183; 1 year ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="thumbnail">
+              <a
+                href="https://www.youtube.com/watch?v=D0jj4AMJFMQ&pp=ygUea3NpIHRha2VzIG9mZiBoaXMgYmFuZGFuYSDwn5KA"
+              >
+                <div class="content-duration"><p>0:41</p></div>
+                <img
+                  src="..\src\img\KSI Takes Off.jpg"
+                  alt="KSI Takes Off"
+                  class="thumbnail"
+                />
+              </a>
+            </div>
+            <div class="content-details-grid">
+              <div class="channel-icon">
+                <a href="https://www.youtube.com/@speedyboykins7869">
+                  <img
+                    src="..\src\ch_img\Speedy Boykins.jpg"
+                    alt="Speedy Boykins"
+                    class="channel-picture"
+                  />
+                </a>
+              </div>
+              <div class="content-text">
+                <a
+                  href="https://www.youtube.com/watch?v=D0jj4AMJFMQ&pp=ygUea3NpIHRha2VzIG9mZiBoaXMgYmFuZGFuYSDwn5KA"
+                >
+                  <p class="content-title">KSI TAKES OFF HIS BANDANA 💀</p>
+                </a>
+                <a href="https://www.youtube.com/@speedyboykins7869">
+                  <p class="content-description content-author">
+                    Speedy Boykins &#10003;
+                  </p>
+                </a>
+                <p class="content-description content-stats">
+                  1.4M views &#183; 2 months ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="thumbnail">
+              <a
+                href="https://www.youtube.com/watch?v=VX6xMrTJRCo&pp=ygUOdGhlIGFydCBvZiBzcHk%3D"
+              >
+                <div class="content-duration"><p>42:26</p></div>
+                <img
+                  alt="DW Spy"
+                  class="thumbnail"
+                  src="..\src\img\DW Spy.jpg"
+                />
+              </a>
+            </div>
+            <div class="content-details-grid">
+              <div class="channel-icon">
+                <a href="https://www.youtube.com/@DWDocumentary"
+                  ><img
+                    src="..\src\ch_img\DW.jpg"
+                    alt="DW"
+                    class="channel-picture"
+                /></a>
+              </div>
+              <div class="content-text">
+                <a
+                  href="https://www.youtube.com/watch?v=VX6xMrTJRCo&pp=ygUOdGhlIGFydCBvZiBzcHk%3D"
+                  ><p class="content-title">
+                    Spies, informants and new enemies - Today’s intelligence
+                    agencies | DW Documentary
+                  </p></a
+                >
+                <a href="https://www.youtube.com/@DWDocumentary"
+                  ><p class="content-description content-author">
+                    DW Documentary &#10003;
+                  </p></a
+                >
+                <p class="content-description content-stats">
+                  1.6M views &#183; 1 year ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="thumbnail">
+              <a href="https://www.youtube.com/watch?v=QFJhm2p7368">
+                <div class="content-duration"><p>3:36</p></div>
+                <img
+                  alt="Milyhya PUBG"
+                  class="thumbnail"
+                  src="..\src\img\Milyhya Candaan_3.jpg"
+                />
+              </a>
+            </div>
+            <div class="content-details-grid">
+              <div class="channel-icon">
+                <a href="https://www.youtube.com/@MILYHYA"
+                  ><img
+                    src="..\src\ch_img\MILYHYA.jpg"
+                    alt="MILYHYA"
+                    class="channel-picture"
+                /></a>
+              </div>
+              <div class="content-text">
+                <a href="https://www.youtube.com/watch?v=QFJhm2p7368"
+                  ><p class="content-title">Sebuah Candaan Jelek #3</p></a
+                >
+                <a href="https://www.youtube.com/@MILYHYA"
+                  ><p class="content-description content-author">
+                    MILYHYA &#10003;
+                  </p></a
+                >
+                <p class="content-description content-stats">
+                  4.9M views &#183; 2 months ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="thumbnail">
+              <a href="https://www.youtube.com/watch?v=QFJhm2p7368">
+                <div class="content-duration"><p>6:31</p></div>
+                <img
+                  alt="KP Substitute Teacher"
+                  class="thumbnail"
+                  src="..\src\img\KP Substitute Teacher.jpg"
+                />
+              </a>
+            </div>
+            <div class="content-details-grid">
+              <div class="channel-icon">
+                <a href="https://www.youtube.com/@KeyAndPeele"
+                  ><img
+                    src="..\src\ch_img\KP.jpg"
+                    alt="KP"
+                    class="channel-picture"
+                /></a>
+              </div>
+              <div class="content-text">
+                <a href="https://www.youtube.com/watch?v=QFJhm2p7368"
+                  ><p class="content-title">
+                    Mr. Garvey Is Your Substitute Teacher - Key & Peele
+                  </p></a
+                >
+                <a href="https://www.youtube.com/@KeyAndPeele"
+                  ><p class="content-description content-author">
+                    Key & Peele;
+                  </p></a
+                >
+                <p class="content-description content-stats">
+                  13M views &#183; 2 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="thumbnail">
+              <a
+                href="https://www.youtube.com/watch?v=h3-Pj-zbEq8&pp=ygUJZm9yZW5zaWNz"
+              >
+                <div class="content-duration"><p>9:24</p></div>
+                <img
+                  alt="SciHow Forensics"
+                  class="thumbnail"
+                  src="..\src\img\SciHow Forensics.jpg"
+                />
+              </a>
+            </div>
+            <div class="content-details-grid">
+              <div class="channel-icon">
+                <a href="https://www.youtube.com/@SciShow"
+                  ><img
+                    src="..\src\ch_img\SciHow.jpg"
+                    alt="SciHow"
+                    class="channel-picture"
+                /></a>
+              </div>
+              <div class="content-text">
+                <a
+                  href="https://www.youtube.com/watch?v=h3-Pj-zbEq8&pp=ygUJZm9yZW5zaWNz"
+                  ><p class="content-title">
+                    An Intro to Forensics: The Science of Crime
+                  </p></a
+                >
+                <a href="https://www.youtube.com/@SciShow"
+                  ><p class="content-description content-author">
+                    SciHow &#10003;
+                  </p></a
+                >
+                <p class="content-description content-stats">
+                  1.4M views &#183; 8 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="thumbnail">
+              <a href="https://www.youtube.com/watch?v=XY2_te1O3Vc">
+                <div class="content-duration"><p>21:12</p></div>
+                <img alt="12am" class="thumbnail" src="..\src\img\12am.jpg" />
+              </a>
+            </div>
+            <div class="content-details-grid">
+              <div class="channel-icon">
+                <a href="https://www.youtube.com/@Ksunemoto"
+                  ><img
+                    src="..\src\ch_img\KM.jpg"
+                    alt="KM"
+                    class="channel-picture"
+                /></a>
+              </div>
+              <div class="content-text">
+                <a href="https://www.youtube.com/watch?v=XY2_te1O3Vc"
+                  ><p class="content-title">
+                    12am silence, come ride with me..
+                  </p></a
+                >
+                <a href="https://www.youtube.com/@Ksunemoto"
+                  ><p class="content-description content-author">
+                    Ksunemoto
+                  </p></a
+                >
+                <p class="content-description content-stats">
+                  93K views &#183; 2 weeks ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="thumbnail">
+              <a href="https://www.youtube.com/watch?v=U91AUYttTyc">
+                <div class="content-duration"><p>4:17</p></div>
+                <img
+                  alt="Surgeon"
+                  class="thumbnail"
+                  src="..\src\img\Surgeon.jpg"
+                />
+              </a>
+            </div>
+            <div class="content-details-grid">
+              <div class="channel-icon">
+                <a href="https://www.youtube.com/@adventisthealthcare"
+                  ><img
+                    src="..\src\ch_img\Adventist.jpg"
+                    alt="Adventist"
+                    class="channel-picture"
+                /></a>
+              </div>
+              <div class="content-text">
+                <a href="https://www.youtube.com/watch?v=U91AUYttTyc"
+                  ><p class="content-title">
+                    Day in the Life: Heart Surgeon
+                  </p></a
+                >
+                <a href="https://www.youtube.com/@adventisthealthcare"
+                  ><p class="content-description content-author">
+                    Adventist HealthCare
+                  </p></a
+                >
+                <p class="content-description content-stats">
+                  38M views &#183; 3 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="thumbnail">
+              <a
+                href="https://www.youtube.com/watch?v=wYZux3BMc5k&pp=ygUFc3BlZWQ%3D"
+              >
+                <div class="content-duration"><p>2:37</p></div>
+                <img alt="Speed" class="thumbnail" src="..\src\img\Speed.jpg" />
+              </a>
+            </div>
+            <div class="content-details-grid">
+              <div class="channel-icon">
+                <a href="https://www.youtube.com/@IShowSpeed"
+                  ><img
+                    src="..\src\ch_img\Speed.jpg"
+                    alt="Speed"
+                    class="channel-picture"
+                /></a>
+              </div>
+              <div class="content-text">
+                <a
+                  href="https://www.youtube.com/watch?v=wYZux3BMc5k&pp=ygUFc3BlZWQ%3D"
+                  ><p class="content-title">
+                    IShowSpeed - Shake (Official Music Video)
+                  </p></a
+                >
+                <a href="https://www.youtube.com/@IShowSpeed"
+                  ><p class="content-description content-author">
+                    IShowSpeed &#10003;
+                  </p></a
+                >
+                <p class="content-description content-stats">
+                  200M views &#183; 2 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
